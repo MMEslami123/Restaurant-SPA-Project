@@ -1,0 +1,15 @@
+span.button {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #cda45e;
+  border-radius: 100px;
+  padding: 6px 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+span.button:hover {
+  background-color: #cda45e;
+}
+span.addFood{
+  
+}

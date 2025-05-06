@@ -1,0 +1,47 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "playFair-re";
+  src: url("./assets/fonts/PlayfairDisplay-Regular.ttf");
+}
+@font-face {
+  font-family: "playFair-sb";
+  src: url("./assets/fonts/PlayfairDisplay-SemiBold.ttf");
+}
+@font-face {
+  font-family: "poppins";
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+.dark-gold {
+  color: #cda45e;
+}
+.dark-gold-bg {
+  background-color: #cda45e;
+}
+.playFair-font-semi {
+  font-family: "playFair-sb";
+}
+.playFair-font-regular {
+  font-family: "playFair-re";
+}
+.poppins-font {
+  font-family: "poppins";
+}
+.z-100 {
+  z-index: 100;
+}
+.bg-light-black {
+  background-color: color-mix(in srgb, #0c0b09 95%, white 5%);
+}
+li {
+  list-style-type: none;
+}
+li > a {
+  text-decoration: none;
+}
+li button {
+  all: unset;
+}

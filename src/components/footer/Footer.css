@@ -1,0 +1,56 @@
+footer{
+       border-top:1px solid rgba(205, 164, 94, 0.3);
+     }
+     .footer-socials svg {
+       font-size: 40px;
+       padding: 10px;
+       border: 1px solid rgba(255, 255, 255, 0.4);
+       border-radius: 50%;
+       opacity: 0.8;
+       margin-right: 12px;
+       cursor: pointer;
+       transition: all 0.3s;
+     }
+     .footer-socials svg:hover {
+       color: #cda45e;
+       border-color: #cda45e;
+       opacity: 1;
+     }
+     .Useful-Links li a,
+     .Our-Services li a {
+       display: inline-block;
+       color: rgba(255, 255, 255, 0.5);
+       margin: 5px 0px;
+       font-size: 14px;
+       transition: all 0.3s;
+     }
+     .Useful-Links li a:hover,
+     .Our-Services li a:hover {
+       color: #cda45e;
+     }
+     .form-control {
+       background-color: transparent !important;
+       border: 1px solid rgba(255, 255, 255, 0.2) !important;
+       border-top-left-radius: 3px !important;
+       border-bottom-left-radius: 3px !important;
+       color: rgba(255, 255, 255, 0.75) !important;
+       font-size: 14px !important;
+       padding: 10px !important;
+       transition: all 0.3s;
+     }
+     .form-control:focus {
+       box-shadow: none !important;
+       border-color: #cda45e !important;
+     }
+     #button-addon2 {
+       background-color: #cda45e;
+       border: none;
+       border-top-right-radius: 3px;
+       border-bottom-right-radius: 3px;
+       color: black;
+       padding: 10px 16px;
+       transition: all 0.4s;
+     }
+     #button-addon2:hover {
+       background-color: #cda45ede;
+     }

@@ -1,0 +1,21 @@
+.counter-container {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+  color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #cda45e;
+  border-radius: 100px;
+  padding: 6px 10px;
+  transition: all 0.3s;
+}
+.hov {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.hov:hover {
+  color: #cda45e;
+}
+.hiddenIcon{
+       display: none;
+}

@@ -1,0 +1,53 @@
+.contact-container {
+  padding: 125px 0px;
+}
+.about-text {
+  margin-bottom: 80px;
+}
+.icon-container {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.icon-container p,
+.icon-container h6 {
+  margin: 0px;
+}
+.icon-container p {
+  opacity: 0.75;
+  font-size: 14px;
+}
+.icon-container h6 {
+  font-family: "playFair-sb";
+  margin-bottom: 5px;
+}
+.icon-container svg {
+  background-color: #cda45e;
+  color: black;
+  border-radius: 4px;
+  font-size: 40px;
+  padding: 10px;
+}
+.contact-form .form-control {
+  border: 1px solid rgba(205, 164, 94, 0.2) !important;
+  padding-top: 30px !important;
+  border-radius: 2px !important;
+  transition: all 0.4s;
+}
+.contact-form .form-control:focus {
+  border: 1px solid rgb(205, 164, 94) !important;
+}
+.form-floating {
+  color: rgba(205, 164, 94, 0.5);
+}
+label::after {
+  background: none !important;
+}
+.form-control:focus ~ label {
+  color: rgba(205, 164, 94, 0.3) !important;
+  transition: all .3s;
+}
+.mybutton span {
+  padding: 10px 30px;
+}

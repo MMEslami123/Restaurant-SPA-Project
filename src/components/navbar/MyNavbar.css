@@ -1,0 +1,40 @@
+nav.navbox {
+  background: rgba(12, 11, 9, 0.63);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.9px);
+  /* -webkit-backdrop-filter: blur(0.9px); */
+  position: fixed;
+  top: 10px;
+  z-index: 99;
+}
+.navbar.simple {
+  top: 40px;
+  background: rgba(12, 11, 9, 0.63);
+  transition: all 0.5s;
+}
+.navbar.stick {
+  top: 0px;
+  background-color: black;
+  border-bottom: 1px solid rgba(205, 164, 94, 0.3);
+  transition: all 0.5s;
+}
+.sticky-top{
+  top: 0 !important;
+  /* position: sticky !important; */
+}
+.normal-top{
+  top: 40px;
+}
+.btn-close {
+  color: white !important;
+}
+a {
+  text-decoration: none !important;
+  transition: all 0.3s;
+}
+a:hover {
+  color: #cda45e !important;
+}
+a.active{
+  color: #cda45e !important;
+}

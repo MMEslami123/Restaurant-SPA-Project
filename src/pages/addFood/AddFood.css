@@ -1,0 +1,35 @@
+.addFood-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  min-height: 100vh;
+}
+
+.addFood-container .container .row {
+  position: relative;
+  background-color: color-mix(in srgb, #0c0b09 75%, white 10%);
+  transition: all 0.6s;
+}
+.addFood-container .container .row:hover {
+  scale: 1.05;
+}
+.addFood-img-container img {
+  width: 20%;
+  height: auto;
+}
+.addFood-price {
+  position: absolute;
+  top: 42px;
+  right: -19px;
+  background-color: color-mix(in srgb, #0c0b09 85%, white 20%);
+  padding: 6px 20px;
+}
+.addFood-price::before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  border-left: 20px solid color-mix(in srgb, #0c0b09 85%, white 20%);
+  top: -20px;
+  right: -20px;
+}

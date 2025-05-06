@@ -1,0 +1,41 @@
+.card-container {
+  padding: 50px 30px;
+  transition: all 0.8s;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+.card-container:hover {
+  padding: 30px 30px 70px 30px;
+  transition: all 0.8s;
+}
+.card-container:hover * {
+  color: #0c0b09 !important;
+  transition: all 0.8s;
+}
+.card-container::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #cda45e;
+  z-index: 1;
+  transition: all 0.8s;
+}
+.card-container:hover::before {
+  top: 0%;
+  z-index: -1;
+}
+.card-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: color-mix(in srgb, #0c0b09 95%, white 5%);
+  transition: all 0.8s;
+  z-index: -2;
+}

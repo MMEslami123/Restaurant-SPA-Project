@@ -1,0 +1,32 @@
+.menu-img-container {
+  background-color: color-mix(in srgb, #0c0b09 95%, white 15%);
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-title {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.menu-title:hover {
+  color: #cda45e !important;
+}
+.menu-concept-container {
+  width: calc(100% - 75px);
+  padding-left: 20px;
+}
+.menu-concept-header {
+  position: relative;
+}
+.menu-concept-header::after {
+  content: "..........................................................................................................................";
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  left: 0;
+  bottom: 4px;
+  color: rgba(255, 255, 255, 0.25);
+  font-family: Arial, Helvetica, sans-serif;
+}
