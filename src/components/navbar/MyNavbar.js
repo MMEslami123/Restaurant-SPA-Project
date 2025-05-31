@@ -3,11 +3,15 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import "./MyNavbar.css";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import MyButton from "../button/MyButton";
 import { NavLink } from "react-router-dom";
-function MyNavbar({ stickyToTop, foodNum }) {
+import { myContext } from "../../App";
+function MyNavbar({ stickyToTop }) {
   const [isVisible, setIsVisible] = useState(true);
+  const { cartCount } = useContext(myContext);
+  console.log(cartCount);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
@@ -55,9 +59,19 @@ function MyNavbar({ stickyToTop, foodNum }) {
                 <NavLink to={"/"} className="text-white" href="#action1">
                   Home
                 </NavLink>
-                <NavLink to={"/cart"} className=" position-relative text-white" href="#action1">
+                <NavLink
+                  to={"/cart"}
+                  className=" position-relative text-white"
+                  href="#action1"
+                >
                   cart
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{foodNum}</span>
+                  {cartCount == 0 ? (
+                    ""
+                  ) : (
+                    <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      {cartCount}
+                    </span>
+                  )}
                 </NavLink>
                 <NavLink to={"/aboutUs"} className="text-white" href="#action1">
                   about Us

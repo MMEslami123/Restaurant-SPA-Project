@@ -6,31 +6,52 @@ import MyNavbar from "../../components/navbar/MyNavbar";
 import { Container, Row } from "react-bootstrap";
 import MyButton from "../../components/button/MyButton";
 import CounterBtn from "../../components/counterBtn/CounterBtn";
-
+import { myContext } from "../../App";
 function AddFood() {
   const cartId = useParams().cartId;
   const [food, setFood] = useState([]);
-  const [number, setNumber] = useState(0);
+  const { cartCount, setCartCount } = useContext(myContext);
+  const [number, setNumber] = useState(cartCount);
+  console.log(cartCount);
 
   useEffect(() => {
     axios
       .get(`http://localhost:3004/menuCards/${cartId}`)
       .then((res) => setFood(res.data));
   }, []);
-  const addCount = () => setNumber(1);
+  const addCount = () => {
+    setNumber((prev) => prev + 1);
+    setFood({ ...food, foodCount: 1 });
+  };
   const increaseHandler = () => {
     setNumber((prev) => prev + 1);
+    const updateCount = food.foodCount + 1;
+
+    axios
+      .patch(`http://localhost:3004/menuCards/${cartId}`, {
+        foodCount: updateCount,
+      })
+      .then((res) => setFood(res.data));
   };
   const decreaseHandler = () => {
     if (number === 0) setNumber(0);
     else {
       setNumber((prev) => prev - 1);
+      const updateCount = food.foodCount - 1;
+      axios
+        .patch(`http://localhost:3004/menuCards/${cartId}`, {
+          foodCount: updateCount,
+        })
+        .then((res) => setFood(res.data));
     }
   };
+  useEffect(() => {
+    setCartCount(number);
+  }, [number]);
   return (
     <>
       <div className="addFood-container bg-light-black">
-        <MyNavbar stickyToTop={true} foodNum={number} />
+        <MyNavbar stickyToTop={true} />
         <Container className="d-flex justify-content-center">
           <Row className="addFood-card align-items-center w-50 rounded rounded-4 py-4">
             <div className="addFood-img-container text-center rounded-circle">
@@ -75,11 +96,11 @@ function AddFood() {
               </div>
             </div>
             <div className="text-center">
-              {number === 0 ? (
+              {food.foodCount === 0 ? (
                 <MyButton onClickBtn={addCount} text={"Add"} />
               ) : (
                 <CounterBtn
-                  number={number}
+                  number={food.foodCount}
                   onIncreasment={increaseHandler}
                   onDeacresement={decreaseHandler}
                 />

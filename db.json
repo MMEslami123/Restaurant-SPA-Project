@@ -1,67 +1,76 @@
 {
   "menuCards": [
     {
-      "id": 1,
+      "id": "1",
       "image": "/images/lobster-bisque.jpg",
       "title": "Lobster Bisque",
       "price": "$5.95",
-      "ingredients": "Lorem, deren, trataro, filede, nerada"
+      "ingredients": "Lorem, deren, trataro, filede, nerada",
+      "foodCount": 0
     },
     {
-      "id": 2,
+      "id": "2",
       "image": "/images/bread-barrel.jpg",
       "title": "Bread Barrel",
       "price": "$6.95",
-      "ingredients": "Lorem, deren, trataro, filede, nerada"
+      "ingredients": "Lorem, deren, trataro, filede, nerada",
+      "foodCount": 0
     },
     {
-      "id": 3,
+      "id": "3",
       "image": "/images/cake.jpg",
       "title": "Crab Cake",
       "price": "$7.95",
-      "ingredients": "A delicate crab cake served on a toasted roll with lettuce and tartar sauce"
+      "ingredients": "A delicate crab cake served on a toasted roll with lettuce and tartar sauce",
+      "foodCount": 0
     },
     {
-      "id": 4,
+      "id": "4",
       "image": "/images/caesar.jpg",
       "title": "Caesar Selections",
       "price": "$8.95",
-      "ingredients": "Lorem, deren, trataro, filede, nerada"
+      "ingredients": "Lorem, deren, trataro, filede, nerada",
+      "foodCount": 0
     },
     {
-      "id": 5,
+      "id": "5",
       "image": "/images/tuscan-grilled.jpg",
       "title": "Tuscan Grilled",
       "price": "$9.95",
-      "ingredients": "Grilled chicken with provolone, artichoke hearts, and roasted red pesto"
+      "ingredients": "Grilled chicken with provolone, artichoke hearts, and roasted red pesto",
+      "foodCount": 0
     },
     {
-      "id": 6,
+      "id": "6",
       "image": "/images/mozzarella.jpg",
       "title": "Mozzarella Stick",
       "price": "$4.95",
-      "ingredients": "Lorem, deren, trataro, filede, nerada"
+      "ingredients": "Lorem, deren, trataro, filede, nerada",
+      "foodCount": 0
     },
     {
-      "id": 7,
+      "id": "7",
       "image": "/images/greek-salad.jpg",
       "title": "Greek Salad",
       "price": "$9.95",
-      "ingredients": "Fresh spinach, crisp romaine, tomatoes, and Greek olives"
+      "ingredients": "Fresh spinach, crisp romaine, tomatoes, and Greek olives",
+      "foodCount": 0
     },
     {
-      "id": 8,
+      "id": "8",
       "image": "/images/spinach-salad.jpg",
       "title": "Spinach Salad",
       "price": "$9.95",
-      "ingredients": "Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette"
+      "ingredients": "Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette",
+      "foodCount": 0
     },
     {
-      "id": 9,
+      "id": "9",
       "image": "/images/lobster-roll.jpg",
       "title": "Lobster Roll",
       "price": "$12.95",
-      "ingredients": "Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll"
+      "ingredients": "Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll",
+      "foodCount": 0
     }
   ]
 }

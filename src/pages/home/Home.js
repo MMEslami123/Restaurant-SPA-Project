@@ -20,7 +20,7 @@ import { use, useContext, useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import Special from "../../components/specials/Special";
-
+import { myContext } from "../../App";
 function Home() {
   const sectionTitles = [
     { subject: "WHY US", subSubject: "Why Choose Our Restaurant" },
@@ -229,6 +229,7 @@ function Home() {
   ];
   const [specialBtn, setSpecialBtn] = useState(0);
   const [menuCards, setMenuCards] = useState([]);
+  // const { pack } = useContext(myContext);
   // const [isLoopEnabled, setIsLoopEnabled] = useState(false);
   // useEffect(() => {
   //   setIsLoopEnabled(true);
@@ -246,7 +247,7 @@ function Home() {
       {/* header */}
       <header>
         <div className="overlay">
-          <MyNavbar  foodNum={number}/>
+          <MyNavbar />
           <Container>
             <Row className="align-content-center vh-100 text-center text-lg-start">
               <h1 className="playFair-font-semi text-white" data-aos="fade-up">
