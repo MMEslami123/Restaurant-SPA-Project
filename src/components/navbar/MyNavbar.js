@@ -10,7 +10,6 @@ import { myContext } from "../../App";
 function MyNavbar({ stickyToTop }) {
   const [isVisible, setIsVisible] = useState(true);
   const { cartCount } = useContext(myContext);
-  console.log(cartCount);
 
   useEffect(() => {
     const handleScroll = () => {

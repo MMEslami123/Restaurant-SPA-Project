@@ -12,7 +12,6 @@ function AddFood() {
   const [food, setFood] = useState([]);
   const { cartCount, setCartCount } = useContext(myContext);
   const [number, setNumber] = useState(cartCount);
-  console.log(cartCount);
 
   useEffect(() => {
     axios
