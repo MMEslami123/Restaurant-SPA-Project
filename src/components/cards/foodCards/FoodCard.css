@@ -1,0 +1,6 @@
+.food-container {
+  background-color: color-mix(in srgb, #0c0b09 75%, white 10%);
+}
+.img-container{
+  width: 200px;
+}
