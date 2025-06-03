@@ -20,12 +20,15 @@ function AddFood() {
   }, []);
   const addCount = () => {
     setNumber((prev) => prev + 1);
-    setFood({ ...food, foodCount: 1 });
+    axios
+      .patch(`http://localhost:3004/menuCards/${cartId}`, {
+        foodCount: 1,
+      })
+      .then((res) => setFood(res.data));
   };
   const increaseHandler = () => {
     setNumber((prev) => prev + 1);
     const updateCount = food.foodCount + 1;
-
     axios
       .patch(`http://localhost:3004/menuCards/${cartId}`, {
         foodCount: updateCount,
